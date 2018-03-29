@@ -1,0 +1,6 @@
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Common.Logic\bin\Debug\Vueling.Common.Logic.dll
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Common.Logic\bin\Debug\Vueling.Common.Logic.pdb
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Common.Logic\obj\Debug\Vueling.Common.Logic.csprojResolveAssemblyReference.cache
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Common.Logic\obj\Debug\Vueling.Common.Logic.csproj.CoreCompileInputs.cache
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Common.Logic\obj\Debug\Vueling.Common.Logic.dll
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Common.Logic\obj\Debug\Vueling.Common.Logic.pdb

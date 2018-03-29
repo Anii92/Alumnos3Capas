@@ -1,0 +1,9 @@
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.Dao\bin\Debug\Vueling.DataAccess.Dao.dll
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.Dao\bin\Debug\Vueling.DataAccess.Dao.pdb
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.Dao\bin\Debug\Vueling.Common.Logic.dll
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.Dao\bin\Debug\Vueling.Common.Logic.pdb
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.Dao\obj\Debug\Vueling.DataAccess.Dao.csprojResolveAssemblyReference.cache
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.Dao\obj\Debug\Vueling.DataAccess.Dao.csproj.CoreCompileInputs.cache
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.Dao\obj\Debug\Vueling.DataAccess.Dao.csproj.CopyComplete
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.Dao\obj\Debug\Vueling.DataAccess.Dao.dll
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.Dao\obj\Debug\Vueling.DataAccess.Dao.pdb

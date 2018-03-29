@@ -1,0 +1,11 @@
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Business.Logic\bin\Debug\Vueling.Business.Logic.dll
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Business.Logic\bin\Debug\Vueling.Business.Logic.pdb
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Business.Logic\bin\Debug\Vueling.Common.Logic.dll
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Business.Logic\bin\Debug\Vueling.DataAccess.Dao.dll
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Business.Logic\bin\Debug\Vueling.Common.Logic.pdb
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Business.Logic\bin\Debug\Vueling.DataAccess.Dao.pdb
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Business.Logic\obj\Debug\Vueling.Business.Logic.csprojResolveAssemblyReference.cache
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Business.Logic\obj\Debug\Vueling.Business.Logic.csproj.CoreCompileInputs.cache
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Business.Logic\obj\Debug\Vueling.Business.Logic.csproj.CopyComplete
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Business.Logic\obj\Debug\Vueling.Business.Logic.dll
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Business.Logic\obj\Debug\Vueling.Business.Logic.pdb
