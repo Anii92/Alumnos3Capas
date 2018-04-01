@@ -19,3 +19,5 @@ C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.DaoTests\obj\Debug\Vu
 C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.DaoTests\obj\Debug\Vueling.DataAccess.DaoTests.csproj.CopyComplete
 C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.DaoTests\obj\Debug\Vueling.DataAccess.DaoTests.dll
 C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.DaoTests\obj\Debug\Vueling.DataAccess.DaoTests.pdb
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.DaoTests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.DaoTests\bin\Debug\Newtonsoft.Json.xml

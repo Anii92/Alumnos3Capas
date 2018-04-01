@@ -25,37 +25,37 @@ namespace Vueling.Presentation.WinSite
             alumnoBL = new AlumnoBL();
         }
 
-        private void GetDatosFormulario()
-        {
-            alumno.Id = Convert.ToInt32(txtId.Text);
-            alumno.Nombre = txtNombre.Text;
-            alumno.Apellidos = txtApellidos.Text;
-            alumno.Dni = txtDni.Text;
-            alumno.FechaNacimiento = Convert.ToDateTime(txtFechaNacimiento.Text);
-        }
-
         private void btnTxt_Click(object sender, EventArgs e)
         {
             Button buttonTxt = (Button)sender;
-            this.GetDatosFormulario();
+            this.LoadAlumnoData();
             alumnoBL.Add(alumno, TipoFichero.Texto);
             MessageBox.Show("El alumno se ha guardado correctamente!");
         }
 
         private void btnJson_Click(object sender, EventArgs e)
         {
-
+            Button buttonJson = (Button)sender;
+            this.LoadAlumnoData();
+            alumnoBL.Add(alumno, TipoFichero.Json);
+            MessageBox.Show("El alumno se ha guardado correctamente!");
         }
 
         private void btnXml_Click(object sender, EventArgs e)
         {
-
+            Button buttonTxt = (Button)sender;
+            this.LoadAlumnoData();
+            alumnoBL.Add(alumno, TipoFichero.Xml);
+            MessageBox.Show("El alumno se ha guardado correctamente!");
         }
 
         private void LoadAlumnoData()
         {
             alumno.Id = Convert.ToInt32(txtId.Text);
             alumno.Nombre = txtNombre.Text;
+            alumno.Apellidos = txtApellidos.Text;
+            alumno.Dni = txtDni.Text;
+            alumno.FechaNacimiento = Convert.ToDateTime(txtFechaNacimiento.Text);
         }
     }
 }

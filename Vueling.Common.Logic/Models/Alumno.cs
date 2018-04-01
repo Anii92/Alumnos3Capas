@@ -13,12 +13,12 @@ namespace Vueling.Common.Logic.Models
 
         }
         //[JsonConstructor]
-        public Alumno(int id, string nombre, string apellidos, string dni) : base(id, nombre, apellidos, dni)
+        public Alumno(int id, string nombre, string apellidos, string dni, int edad, DateTime fechaNacimiento) : base(id, nombre, apellidos, dni, edad, fechaNacimiento)
         {
 
         }
 
-        public Alumno(int id, string nombre, string apellidos, string dni, string guid) : base(id, nombre, apellidos, dni, guid)
+        public Alumno(int id, string nombre, string apellidos, string dni, int edad, DateTime fechaNacimiento, DateTime fechaHora, string guid) : base(id, nombre, apellidos, dni, edad, fechaNacimiento, fechaHora, guid)
         {
 
         }

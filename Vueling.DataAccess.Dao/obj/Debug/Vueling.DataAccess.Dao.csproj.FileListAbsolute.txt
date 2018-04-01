@@ -7,3 +7,5 @@ C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.Dao\obj\Debug\Vueling
 C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.Dao\obj\Debug\Vueling.DataAccess.Dao.csproj.CopyComplete
 C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.Dao\obj\Debug\Vueling.DataAccess.Dao.dll
 C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.Dao\obj\Debug\Vueling.DataAccess.Dao.pdb
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.Dao\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.DataAccess.Dao\bin\Debug\Newtonsoft.Json.xml

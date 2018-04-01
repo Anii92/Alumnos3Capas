@@ -21,12 +21,17 @@ namespace Vueling.Business.Logic
         public Alumno Add(Alumno alumno, TipoFichero tipoFichero)
         {
             alumno.Edad = CalcularEdad(alumno.FechaNacimiento);
-            alumno.FechaHora = DateTime.Now;
+            alumno.FechaHora = CalcularFechaRegistro();
             alumnoDao.Add(alumno, tipoFichero);
             return alumno;
         }
 
-        private int CalcularEdad(DateTime fechaNacimiento)
+        public DateTime CalcularFechaRegistro()
+        {
+            return DateTime.Now;
+        }
+
+        public int CalcularEdad(DateTime fechaNacimiento)
         {
             DateTime now = DateTime.Today;
             int age = now.Year - fechaNacimiento.Year;

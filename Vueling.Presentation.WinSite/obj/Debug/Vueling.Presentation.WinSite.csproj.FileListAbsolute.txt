@@ -15,3 +15,5 @@ C:\Users\ana.jayme\source\repos\Vueling\Vueling.Presentation.WinSite\obj\Debug\V
 C:\Users\ana.jayme\source\repos\Vueling\Vueling.Presentation.WinSite\obj\Debug\Vueling.Presentation.WinSite.pdb
 C:\Users\ana.jayme\source\repos\Vueling\Vueling.Presentation.WinSite\bin\Debug\Vueling.DataAccess.Dao.dll
 C:\Users\ana.jayme\source\repos\Vueling\Vueling.Presentation.WinSite\bin\Debug\Vueling.DataAccess.Dao.pdb
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Presentation.WinSite\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Presentation.WinSite\bin\Debug\Newtonsoft.Json.xml

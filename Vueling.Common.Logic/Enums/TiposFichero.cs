@@ -11,7 +11,8 @@ namespace Vueling.Common.Logic.Enums
         public enum TipoFichero
         {
             Texto,
-            Json
+            Json,
+            Xml
         }
     }
 }

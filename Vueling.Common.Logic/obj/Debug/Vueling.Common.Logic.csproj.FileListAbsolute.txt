@@ -4,3 +4,6 @@ C:\Users\ana.jayme\source\repos\Vueling\Vueling.Common.Logic\obj\Debug\Vueling.C
 C:\Users\ana.jayme\source\repos\Vueling\Vueling.Common.Logic\obj\Debug\Vueling.Common.Logic.csproj.CoreCompileInputs.cache
 C:\Users\ana.jayme\source\repos\Vueling\Vueling.Common.Logic\obj\Debug\Vueling.Common.Logic.dll
 C:\Users\ana.jayme\source\repos\Vueling\Vueling.Common.Logic\obj\Debug\Vueling.Common.Logic.pdb
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Common.Logic\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Common.Logic\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ana.jayme\source\repos\Vueling\Vueling.Common.Logic\obj\Debug\Vueling.Common.Logic.csproj.CopyComplete
