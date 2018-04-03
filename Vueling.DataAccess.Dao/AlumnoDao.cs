@@ -12,16 +12,14 @@ namespace Vueling.DataAccess.Dao
 {
     public class AlumnoDao : IAlumnoDao
     {
-        private FicheroFactory ficheroFactory;
 
         public AlumnoDao()
         {
-            ficheroFactory = new FicheroFactory();
         }
 
         public Alumno Add(Alumno alumno, TipoFichero tipoFichero)
         {
-            IFichero fichero = (IFichero) ficheroFactory.CrearFichero(tipoFichero, "ListadoAlumno");
+            IFichero fichero = (IFichero)FicheroFactory.CrearFichero(tipoFichero, "ListadoAlumno");
             fichero.Guardar(alumno);
             return alumno;
         }

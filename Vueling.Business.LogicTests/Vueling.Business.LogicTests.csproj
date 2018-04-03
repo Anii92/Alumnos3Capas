@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C9C9F5EB-B3D4-44A6-B4A1-74A0586789C2}</ProjectGuid>
+    <ProjectGuid>{0D4C072E-0AE4-4382-A505-F201583B552B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Vueling.DataAccess.DaoTests</RootNamespace>
-    <AssemblyName>Vueling.DataAccess.DaoTests</AssemblyName>
+    <RootNamespace>Vueling.Business.LogicTests</RootNamespace>
+    <AssemblyName>Vueling.Business.LogicTests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -45,9 +45,6 @@
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.1.2.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -59,7 +56,7 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="AlumnoTests.cs" />
+    <Compile Include="AlumnoBLTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -69,14 +66,6 @@
     <ProjectReference Include="..\Vueling.Business.Logic\Vueling.Business.Logic.csproj">
       <Project>{07C0C744-A76D-451E-A0E6-AC5510B35E4C}</Project>
       <Name>Vueling.Business.Logic</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Vueling.Common.Logic\Vueling.Common.Logic.csproj">
-      <Project>{0F3FC773-7277-4B09-89E7-1210B6766768}</Project>
-      <Name>Vueling.Common.Logic</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Vueling.DataAccess.Dao\Vueling.DataAccess.Dao.csproj">
-      <Project>{7B80AE09-0A73-4023-A09F-DC6EB5289CB1}</Project>
-      <Name>Vueling.DataAccess.Dao</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

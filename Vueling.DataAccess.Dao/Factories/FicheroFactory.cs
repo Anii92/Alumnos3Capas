@@ -10,7 +10,7 @@ namespace Vueling.DataAccess.Dao.Factories
 {
     public class FicheroFactory
     {
-        public Object CrearFichero(TipoFichero tipoFichero, string nombre)
+        public static Object CrearFichero(TipoFichero tipoFichero, string nombre)
         {
             switch (tipoFichero)
             {
