@@ -12,8 +12,18 @@ using Vueling.Common.Logic.Models;
 
 namespace Vueling.Common.Logic
 {
-    public class FileUtils
+    public static class FileUtils
     {
+        public static string ToJson(this object value)
+        {
+            var settings = new JsonSerializerSettings
+            {
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            };
+
+            return JsonConvert.SerializeObject(value, Newtonsoft.Json.Formatting.Indented, settings);
+        }
+
         public static string ToJson(string data, Alumno alumno)
         {
             var employeeList = JsonConvert.DeserializeObject<List<Alumno>>(data);
