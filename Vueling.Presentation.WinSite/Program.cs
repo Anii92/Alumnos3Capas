@@ -17,7 +17,8 @@ namespace Vueling.Presentation.WinSite
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AlumnoForm());
+            //Application.Run(new AlumnoForm());
+            Application.Run(new AlumnosShowForm());
         }
     }
 }

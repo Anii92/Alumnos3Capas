@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using log4net;
+using System.IO;
+using log4net.Config;
 
 namespace Vueling.Business.Logic.Tests
 {
@@ -17,7 +19,9 @@ namespace Vueling.Business.Logic.Tests
         [AssemblyInitialize]
         public static void AssemblyInitialize(TestContext context)
         {
-            log4net.Config.XmlConfigurator.Configure();
+            XmlConfigurator.Configure(new FileInfo("log4net.config"));
+            ILog LOG = LogManager.GetLogger(typeof(AlumnoBLTests));
+            LOG.Debug("Log4net initialized for tests");
         }
 
         [DataRow("22-01-1992", 26)]

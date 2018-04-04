@@ -46,11 +46,35 @@ namespace Vueling.Common.Logic
             return new Alumno(Convert.ToInt32(liniaFichero[0]), liniaFichero[1], liniaFichero[2], liniaFichero[3], Convert.ToInt32(liniaFichero[4]), Convert.ToDateTime(liniaFichero[5]), Convert.ToDateTime(liniaFichero[6]), liniaFichero[7]);
         }
 
+        public static List<Alumno> DeserializeFicheroTexto(string pathFile)
+        {
+            List<Alumno> alumnos = new List<Alumno>();
+            string[] liniaFichero = null;
+            foreach (var line in File.ReadAllLines(pathFile))
+            {
+                liniaFichero = line.Split(',');
+                Alumno alumno = new Alumno(Convert.ToInt32(liniaFichero[0]), liniaFichero[1], liniaFichero[2], liniaFichero[3], Convert.ToInt32(liniaFichero[4]), Convert.ToDateTime(liniaFichero[5]), Convert.ToDateTime(liniaFichero[6]), liniaFichero[7]);
+                alumnos.Add(alumno);
+            }
+            return alumnos;
+        }
+
         public static Alumno DeserializeJson(string pathFile)
         {
             var jsonData = System.IO.File.ReadAllText(pathFile);
             List<Alumno> alumnosList = JsonConvert.DeserializeObject<List<Alumno>>(jsonData);
             return new Alumno(alumnosList[0].Id, alumnosList[0].Nombre, alumnosList[0].Apellidos, alumnosList[0].Dni, alumnosList[0].Edad, alumnosList[0].FechaNacimiento, alumnosList[0].FechaHora, alumnosList[0].MiGuid);
+        }
+
+        public static List<Alumno> DeserializeFicheroJson(string pathFile)
+        {
+            List<Alumno> alumnos = new List<Alumno>();
+            if (File.Exists(pathFile))
+            {
+                var jsonData = System.IO.File.ReadAllText(pathFile);
+                alumnos = JsonConvert.DeserializeObject<List<Alumno>>(jsonData);
+            }
+            return alumnos;
         }
 
         public static Alumno DeserializeXml(string pathFile)

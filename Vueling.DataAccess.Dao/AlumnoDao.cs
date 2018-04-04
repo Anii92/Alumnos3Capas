@@ -12,6 +12,7 @@ namespace Vueling.DataAccess.Dao
 {
     public class AlumnoDao : IAlumnoDao
     {
+        private Vueling.DataAccess.Dao.Singleton.SingletonJson singleton;
 
         public AlumnoDao()
         {
@@ -19,6 +20,8 @@ namespace Vueling.DataAccess.Dao
 
         public Alumno Add(Alumno alumno, TipoFichero tipoFichero)
         {
+            singleton = Vueling.DataAccess.Dao.Singleton.SingletonJson.Instance;
+            singleton = Vueling.DataAccess.Dao.Singleton.SingletonJson.Instance;
             IFichero fichero = (IFichero)FicheroFactory.CrearFichero(tipoFichero, "ListadoAlumno");
             fichero.Guardar(alumno);
             return alumno;

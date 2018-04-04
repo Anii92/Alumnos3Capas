@@ -33,5 +33,10 @@ namespace Vueling.Common.Logic.Models
                 File.AppendAllText(this.Ruta, FileUtils.ToString(alumno) + Environment.NewLine);
             }
         }
+
+        public List<Alumno> Leer()
+        {
+            return FileUtils.DeserializeFicheroTexto(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDoc‌​uments), "ListadoDeAlumnos.txt"));
+        }
     }
 }

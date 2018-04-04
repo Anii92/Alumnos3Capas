@@ -46,5 +46,10 @@ namespace Vueling.Common.Logic.Models
                     
             }
         }
+
+        public List<Alumno> Leer()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

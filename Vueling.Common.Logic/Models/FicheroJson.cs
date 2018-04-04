@@ -38,5 +38,10 @@ namespace Vueling.Common.Logic.Models
                 System.IO.File.WriteAllText(this.Ruta, jsonData);
             }
         }
+
+        public List<Alumno> Leer()
+        {
+            return FileUtils.DeserializeFicheroJson(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDoc‌​uments), "ListadoDeAlumnos.json"));
+        }
     }
 }

@@ -13,5 +13,6 @@ namespace Vueling.Common.Logic
         string Ruta { get; set; }
 
         void Guardar(Alumno alumno);
+        List<Alumno> Leer();
     }
 }

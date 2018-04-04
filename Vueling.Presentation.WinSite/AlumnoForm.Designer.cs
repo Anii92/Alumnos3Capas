@@ -41,6 +41,7 @@
             this.lblApellidos = new System.Windows.Forms.Label();
             this.lblDni = new System.Windows.Forms.Label();
             this.lblFechaNamcimiento = new System.Windows.Forms.Label();
+            this.btnMostrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnTxt
@@ -153,11 +154,22 @@
             this.lblFechaNamcimiento.TabIndex = 12;
             this.lblFechaNamcimiento.Text = "Fecha de nacimiento";
             // 
+            // btnMostrar
+            // 
+            this.btnMostrar.Location = new System.Drawing.Point(207, 318);
+            this.btnMostrar.Name = "btnMostrar";
+            this.btnMostrar.Size = new System.Drawing.Size(75, 23);
+            this.btnMostrar.TabIndex = 13;
+            this.btnMostrar.Text = "Mostrar";
+            this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
+            // 
             // AlumnoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(476, 332);
+            this.ClientSize = new System.Drawing.Size(476, 353);
+            this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.lblFechaNamcimiento);
             this.Controls.Add(this.lblDni);
             this.Controls.Add(this.lblApellidos);
@@ -193,5 +205,6 @@
         private System.Windows.Forms.Label lblApellidos;
         private System.Windows.Forms.Label lblDni;
         private System.Windows.Forms.Label lblFechaNamcimiento;
+        private System.Windows.Forms.Button btnMostrar;
     }
 }

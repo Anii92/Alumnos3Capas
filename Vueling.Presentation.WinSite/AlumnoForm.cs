@@ -69,5 +69,13 @@ namespace Vueling.Presentation.WinSite
             Log.Debug(FileUtils.ToJson(alumno));
             Log.Debug("Fin de la función LoadAlumnoData");
         }
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            this.LoadAlumnoData();
+            AlumnosShowForm alumnosShowForm = new AlumnosShowForm(alumno);
+            alumnosShowForm.Show();
+            this.Hide();
+        }
     }
 }

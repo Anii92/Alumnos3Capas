@@ -46,8 +46,11 @@
     <Compile Include="AlumnoDao.cs" />
     <Compile Include="Factories\FicheroFactory.cs" />
     <Compile Include="Factories\PersonaFactory.cs" />
+    <Compile Include="FicheroDao.cs" />
     <Compile Include="IAlumnoDao.cs" />
+    <Compile Include="IFicheroDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Singleton\SingletonJson.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Vueling.Common.Logic\Vueling.Common.Logic.csproj">
