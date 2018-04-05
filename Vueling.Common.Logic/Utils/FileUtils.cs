@@ -77,6 +77,22 @@ namespace Vueling.Common.Logic
             return alumnos;
         }
 
+        public static List<Alumno> DeserializeFicheroXml(string pathFile)
+        {
+            List<Alumno> alumnos = new List<Alumno>();
+            if (File.Exists(pathFile))
+            {
+                var xmlSerializer = new XmlSerializer(alumnos.GetType());
+
+                using (Stream reader = File.OpenRead(pathFile))
+                {
+                    alumnos = (List<Alumno>)xmlSerializer.Deserialize(reader);
+                }
+            }
+            
+            return alumnos;
+        }
+
         public static Alumno DeserializeXml(string pathFile)
         {
             Alumno alumno = new Alumno();

@@ -6,31 +6,32 @@ using System.Threading.Tasks;
 using Vueling.Common.Logic;
 using Vueling.Common.Logic.Models;
 
-namespace Vueling.DataAccess.Dao.Singleton
+
+namespace Vueling.DataAccess.Dao.Singletons
 {
-    public sealed class SingletonJson
+    public sealed class SingletonXml
     {
-        private static SingletonJson instance = null;
+        private static SingletonXml instance = null;
         private static readonly object padlock = new object();
 
         private List<Alumno> alumnos;
 
-        private SingletonJson()
+        private SingletonXml()
         {
 
         }
 
-        public static SingletonJson Instance
+        public static SingletonXml Instance
         {
             get
             {
                 if (instance == null)
                 {
-                    lock(padlock)
+                    lock (padlock)
                     {
                         if (instance == null)
                         {
-                            instance = new SingletonJson();
+                            instance = new SingletonXml();
                         }
                     }
                 }
@@ -40,7 +41,8 @@ namespace Vueling.DataAccess.Dao.Singleton
 
         public List<Alumno> Leer()
         {
-            alumnos = FileUtils.DeserializeFicheroJson(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDoc‌​uments), "ListadoDeAlumnos.json"));
+            //Hay que hacerlo para XML
+            alumnos = FileUtils.DeserializeFicheroXml(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDoc‌​uments), "ListadoDeAlumnos.xml"));
             return alumnos;
         }
 

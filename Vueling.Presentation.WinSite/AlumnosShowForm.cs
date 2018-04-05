@@ -23,8 +23,7 @@ namespace Vueling.Presentation.WinSite
         {
             InitializeComponent();
             this.ficheroBL = new FicheroBL();
-            this.CargarAlumnosFicheroJson();
-            this.CargarAlumnosFicheroXml();
+            this.CargarAlumnosFichero();
             this.MostrarAlumnosTextoEnPantalla();
         }
 
@@ -32,8 +31,7 @@ namespace Vueling.Presentation.WinSite
         {
             InitializeComponent();
             this.ficheroBL = new FicheroBL();
-            this.CargarAlumnosFicheroJson();
-            this.CargarAlumnosFicheroXml();
+            this.CargarAlumnosFichero();
             this.MostrarAlumnoEnPantalla(alumno);
         }
 
@@ -44,14 +42,10 @@ namespace Vueling.Presentation.WinSite
             this.EscribirEnPantalla(alumnos);
         }
 
-        private void CargarAlumnosFicheroXml()
+        private void CargarAlumnosFichero()
         {
-            this.alumnosXml = this.ficheroBL.CargarDatosFicheroXml();
-        }
-
-        private void CargarAlumnosFicheroJson()
-        {
-            this.alumnosJson = this.ficheroBL.CargarDatosFicheroJson(); 
+            this.alumnosJson = this.ficheroBL.CargarDatosFichero(TipoFichero.Json);
+            this.alumnosXml = this.ficheroBL.CargarDatosFichero(TipoFichero.Xml);
         }
 
         private List<Alumno> LeerDeFicheroDeTexto()
@@ -85,6 +79,11 @@ namespace Vueling.Presentation.WinSite
         {
             List<Alumno> alumnosFiltrados = this.ficheroBL.FiltrarFicheroJsonPorNombre(this.txtNombreBuscador.Text);
             this.EscribirEnPantalla(alumnosFiltrados);
+        }
+
+        private void btnXmlBuscador_Click(object sender, EventArgs e)
+        {
+            this.EscribirEnPantalla(this.alumnosXml);
         }
     }
 }

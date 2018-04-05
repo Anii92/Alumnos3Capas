@@ -11,8 +11,7 @@ namespace Vueling.Business.Logic
     public interface IFicheroBL
     {
         List<Alumno> Leer(TipoFichero tipoFichero);
-        List<Alumno> CargarDatosFicheroJson();
-        List<Alumno> CargarDatosFicheroXml();
+        List<Alumno> CargarDatosFichero(TipoFichero tipoFichero);
         List<Alumno> FiltrarFicheroJsonPorNombre(string valor);
     }
 }

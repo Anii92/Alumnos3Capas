@@ -18,19 +18,14 @@ namespace Vueling.Business.Logic
             this.ficheroDao = new FicheroDao();
         }
 
-        public List<Alumno> CargarDatosFicheroJson()
+        public List<Alumno> CargarDatosFichero(TipoFichero tipoFichero)
         {
-            return this.ficheroDao.CargarDatosFicheroJson();
+            return this.ficheroDao.CargarDatosFichero(tipoFichero);
         }
 
         public List<Alumno> FiltrarFicheroJsonPorNombre(string valor)
         {
             return this.ficheroDao.FiltrarFicheroJsonPorNombre(valor);
-        }
-
-        public List<Alumno> CargarDatosFicheroXml()
-        {
-            return this.ficheroDao.CargarDatosFicheroXml();
         }
 
         public List<Alumno> Leer(TipoFichero tipoFichero)

@@ -11,8 +11,7 @@ namespace Vueling.DataAccess.Dao
     public interface IFicheroDao
     {
         List<Alumno> Leer(TipoFichero tipoFichero);
-        List<Alumno> CargarDatosFicheroJson();
-        List<Alumno> CargarDatosFicheroXml();
+        List<Alumno> CargarDatosFichero(TipoFichero tipoFichero);
         List<Alumno> FiltrarFicheroJsonPorNombre(string valor);
     }
 }

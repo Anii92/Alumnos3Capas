@@ -22,27 +22,41 @@ namespace Vueling.Common.Logic.Models
 
         public void Guardar(Alumno alumno)
         {
-            TextWriter writer = null;
+            List<Alumno> alumnos = new List<Alumno>();
+            //TextWriter writer = null;
+            var xmlSerializer = new XmlSerializer(typeof(List<Alumno>));
             try
             {
-                var serializer = new XmlSerializer(alumno.GetType());
-                if (!File.Exists(this.Ruta))
+                if (File.Exists(this.Ruta))
                 {
-                    writer = new StreamWriter(this.Ruta, false);
+                    using (Stream reader = File.OpenRead(this.Ruta))
+                    {
+                        alumnos = (List<Alumno>)xmlSerializer.Deserialize(reader);
+                    }
+                }
+                alumnos.Add(alumno);
+                using (Stream writer = File.Open(this.Ruta, FileMode.OpenOrCreate, FileAccess.Write))
+                {
+                    xmlSerializer.Serialize(writer, alumnos);
+                }
+                //var serializer = new XmlSerializer(alumno.GetType());
+                //if (!File.Exists(this.Ruta))
+                //{
+                //    writer = new StreamWriter(this.Ruta, false);
                     
-                }
-                else
-                {
-                    writer = new StreamWriter(this.Ruta, true);
-                }
-                serializer.Serialize(writer, alumno);
+                //}
+                //else
+                //{
+                //    writer = new StreamWriter(this.Ruta, true);
+                //}
+                //serializer.Serialize(writer, alumno);
             }
             finally
             {
-                if (writer != null)
-                {
-                    writer.Close();
-                }
+                //if (writer != null)
+                //{
+                //    writer.Close();
+                //}
                     
             }
         }

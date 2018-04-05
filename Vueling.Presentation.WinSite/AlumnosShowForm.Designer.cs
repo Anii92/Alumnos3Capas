@@ -86,6 +86,7 @@
             this.btnXmlBuscador.TabIndex = 3;
             this.btnXmlBuscador.Text = "Xml";
             this.btnXmlBuscador.UseVisualStyleBackColor = true;
+            this.btnXmlBuscador.Click += new System.EventHandler(this.btnXmlBuscador_Click);
             // 
             // btnIdBuscador
             // 

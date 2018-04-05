@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,7 +25,8 @@ namespace Vueling.Presentation.WinSite
 
         public AlumnoForm()
         {
-            Log.Debug("Inicio del constructor AlumnoForm");
+            
+            Log.Debug("Algo da igual");
             InitializeComponent();
             alumno = new Alumno();
             alumnoBL = new AlumnoBL();
