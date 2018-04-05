@@ -25,7 +25,6 @@ namespace Vueling.Presentation.WinSite
 
         public AlumnoForm()
         {
-            
             Log.Debug("Algo da igual");
             InitializeComponent();
             alumno = new Alumno();
